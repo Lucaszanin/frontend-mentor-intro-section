@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@300;400&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <!-- STYLES -->
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">
+      <img src="src/images/logo.svg" alt="Logo Snap Company">
+    </a>
+    <nav class="menu">
+      <ul>
+        <li><a href="#features">Features</a>
+          <ul class="drowpdow-menu" id="dropdown">
+            <li>
+              <img src="src/images/icon-todo.svg" alt="Calendar Icon">
+              <a href="#">Todo List</a>
+            </li>
+            <li>
+              <img src="src/images/icon-calendar.svg" alt="Calendar Icon">
+              <a href="#">Calendar</a>
+            </li>
+            <li>
+              <img src="src/images/icon-reminders.svg" alt="Calendar Icon">
+              <a href="#">Reminders</a>
+            </li>
+            <li>
+              <img src="src/images/icon-planning.svg" alt="Calendar Icon">
+              <a href="#">Planning</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="#company">Company</a>
+          <ul class="drowpdow-menu">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#company">Careers</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="register">
+      <a href="#">Login</a>
+      <a href="#" class="btn">Register</a>
+    </div>
+    <div class="mobile-menu">
+      <a href="#">
+        <img src="src/images/icon-menu.svg" alt="">
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="work">
+      <h1>
+        Make remote work
+      </h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a href="#" class="btn">Learn more</a>
+
+      <div class="partners">
+        <img src="src/images/client-databiz.svg" alt="Logo Databiz client">
+        <img src="src/images/client-audiophile.svg" alt="Logo Databiz client">
+        <img src="src/images/client-meet.svg" alt="Logo Databiz client">
+        <img src="src/images/client-maker.svg" alt="Logo Databiz client">
+      </div>
+    </section>
+    <section class="hero">
+      <img src="src/images/image-hero-desktop.png" alt="">
+    </section>
+  </main>
+
+</body>
+
+</html>
