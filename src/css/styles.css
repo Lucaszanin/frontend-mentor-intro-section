@@ -24,8 +24,34 @@ header {
     transition: .3s ease;
 }
 
-.drowpdow-menu li {
-    display: none;
+.menu .dropdow-menu {
+    display: block;
+    background: rgb(235, 233, 233);
+    min-width: 120px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.menu .dropdow-menu li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.menu .dropdow-menu {
+   display:none;
+   opacity: 0;
+}
+
+.menu .dropdow-menu li a{
+    padding: .5rem;
+}
+
+.menu .dropdow-menu.active-dropdown {
+    display: block;
+    opacity: 1;
 }
 
 .menu ul {
@@ -37,22 +63,15 @@ header {
 
 .menu ul li a,
 .register a {
-    margin-left: 3rem;
+    margin-left: 2rem;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.menu ul li:nth-child(1)::before,
-.menu ul li:nth-child(2)::before {
+.menu ul .arrow::after,
+.menu ul .arrow::after {
     content: url(../images/icon-arrow-down.svg);
-    width: 1rem;
-    height: 1rem;
-    margin-left: .5rem;
-}
-
-.menu ul li:nth-child(1).active::after,
-.menu ul li:nth-child(3).active::after {
-    content: url(../images/icon-arrow-up.svg);
+    display: inline-block;
     width: 1rem;
     height: 1rem;
     margin-left: .5rem;
@@ -72,12 +91,13 @@ header {
     flex-wrap: wrap-reverse;
     max-width: 100%;
     margin: 0 auto;
+    padding: 2rem;
 }
 
 .container .work {
     align-self: flex-start;
     margin-right: 10rem;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .container .work h1 {
@@ -117,56 +137,11 @@ header {
     justify-content: flex-start;
     gap: 5rem;
     margin-top: 10rem;
+    padding: 1rem;
 }
 
 .container .hero img {
     min-width: 50%;
     max-height: 75vh;
-    margin-top: 10rem;
-}
-
-@media (max-width:740px) {
-    header {
-        width: 100%;
-    }
-     .menu,
-     .register{
-        display: none;
-     }
-     
-    .mobile-menu {
-        display: block;
-    }
-
-    .container {
-        padding: 2rem;
-    }
-
-    .container .work {
-        margin-right: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .container .work h1 {
-        width: 100%;
-        text-align: center;
-        padding: 2rem;
-        font-size: 3rem;
-    }
-
-    .container .work p {
-        text-align: center;
-        font-size: 2rem;
-        padding: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .work .partners {
-        padding: 2rem;
-        justify-content: center;
-        gap: .5rem;
-    }
+    margin-top: 5rem;
 }

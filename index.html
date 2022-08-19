@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="src/css/variables.css">
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
 </head>
 
 <body>
@@ -21,10 +22,11 @@
     <a href="#" class="logo">
       <img src="src/images/logo.svg" alt="Logo Snap Company">
     </a>
+
     <nav class="menu">
       <ul>
-        <li><a href="#features">Features</a>
-          <ul class="drowpdow-menu" id="dropdown">
+        <li><a class="arrow" href="#features">Features</a>
+          <ul class="dropdow-menu" id="dropdown">
             <li>
               <img src="src/images/icon-todo.svg" alt="Calendar Icon">
               <a href="#">Todo List</a>
@@ -44,8 +46,8 @@
           </ul>
         </li>
 
-        <li><a href="#company">Company</a>
-          <ul class="drowpdow-menu">
+        <li><a class="arrow" href="#company" id="company-drop">Company</a>
+          <ul class="dropdow-menu" id="company">
             <li><a href="#">History</a></li>
             <li><a href="#">Our Team</a></li>
             <li><a href="#">Blog</a></li>
@@ -86,10 +88,15 @@
       </div>
     </section>
     <section class="hero">
-      <img src="src/images/image-hero-desktop.png" alt="">
+      <picture>
+        <source srcset="src/images/image-hero-desktop.png" media="(min-width: 900px)">
+        <source srcset="src/images/image-hero-mobile.png" media="(min-width: 475px)">
+        <img src="src/images/image-hero-mobile.png" alt="Homem negro com notebook e um fundo colorido">
+      </picture>
     </section>
   </main>
 
+  <script src="src/scripts/main.js"></script>
 </body>
 
 </html>
